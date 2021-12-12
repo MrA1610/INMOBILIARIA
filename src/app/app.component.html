@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+
+
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+   
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="./home" routerLink="home" class="logo nav-link">INMOBILIARIA HOGAR </a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="./home" routerLink="home" class="nav-menu-link nav-link">HOME</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./mision" routerLink="mision" class="nav-menu-link nav-link">MISION</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./vision" routerLink="vision" class="nav-menu-link nav-link">VISION</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./contactenos/" routerLink="contactenos" class="nav-menu-link nav-link">CONTACTENOS</a>
+          </li>
+          
+        </ul>
+        <li class="nav-menu-item">
+            <a href="./login" routerLink="WelcomeBack" class="nav-menu-link nav-link nav-menu-link_active"
+              >INGRESA</a
+            >
+          </li>
+          <li class="nav-menu-item">
+            <a href="./registro" routerLink="CreateAccount" class="nav-menu-link nav-link nav-menu-link_active"
+              >REGISTRATE</a
+            >
+          </li>
+      </nav>
+    </header>
+   
+  </body>
+</html>
+
+
+
+<router-outlet></router-outlet>

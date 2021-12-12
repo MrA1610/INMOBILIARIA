@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="left">
+    <div class="header">
+
+      <h2 class="animation a1">CREATE YOUR ACCOUNT</h2>
+      <h4 class="animation a2" style= color:white>FILL ALL THE PLACES TO JOIN OUR FAMILY</h4>
+      
+    </div>
+    <div class="form" >
+
+      <input type="text" class="form-field animation a3" placeholder="Name">
+
+      <input type="text" class="form-field animation a3" placeholder="Surnames">
+
+      <input type="text" class="form-field 
+      animation a3" placeholder="City">
+
+      <input type="email" class="form-field animation a4" placeholder="Email Address"
+      [(ngModel)]="user.email"
+        required minlength="3" maxlength="30" >
+
+      <input type="password" class="form-field animation a5" placeholder="Password">
+
+      <br>
+
+
+      <div class="form-group">
+        <label for="rol" style=color:white > RANGO </label>
+        <select name="rol" id="rol" class="form-control" [(ngModel)]="user.role">
+          <option *ngFor="let rol of listaRoles" >{{rol.name}}</option>
+        </select>
+      </div>
+
+      
+      <button class="animation a7" (click)="signUp()">BIENVENIDO</button>
+    </div>
+  </div>
+  
+</div>
+
+
+
